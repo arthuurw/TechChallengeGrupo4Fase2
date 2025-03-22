@@ -1,0 +1,16 @@
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\bin\Debug\net9.0\ContatosGrupo4.Application.deps.json
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\bin\Debug\net9.0\ContatosGrupo4.Application.dll
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\bin\Debug\net9.0\ContatosGrupo4.Application.pdb
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\bin\Debug\net9.0\ContatosGrupo4.Domain.dll
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\bin\Debug\net9.0\ContatosGrupo4.Domain.pdb
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ContatosGrupo4.Application.csproj.AssemblyReference.cache
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ContatosGrupo4.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ContatosGrupo4.Application.AssemblyInfoInputs.cache
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ContatosGrupo4.Application.AssemblyInfo.cs
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ContatosGrupo4.Application.csproj.CoreCompileInputs.cache
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ContatosGrupo4.Application.sourcelink.json
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\Contatos.E583986B.Up2Date
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ContatosGrupo4.Application.dll
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\refint\ContatosGrupo4.Application.dll
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ContatosGrupo4.Application.pdb
+C:\Users\arthu\Documents\GitHub\TechChallengeGrupo4Fase2\ContatosGrupo4.Application\obj\Debug\net9.0\ref\ContatosGrupo4.Application.dll

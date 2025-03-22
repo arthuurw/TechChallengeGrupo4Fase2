@@ -12,24 +12,80 @@ public class UsuarioController (UsuarioService usuarioService): ControllerBase
 
     [HttpGet] public async Task<IActionResult> GetAll() => Ok(await _usuarioService.GetAllAsync());
 
-    [HttpGet("{login}")] public async Task<IActionResult> GetById(String login) => Ok(await _usuarioService.GetByIdAsync(login));
+    [HttpGet("{login}")]
+    public async Task<IActionResult> GetById(String login)
+    {
+        try
+        {
+            return Ok(await _usuarioService.GetByIdAsync(login));
+        }
+        catch (ArgumentException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno: {ex.Message}");
+        }
+    }
 
     [HttpPost] public async Task<IActionResult> Create(Usuario usuario) 
-    { 
-        await _usuarioService.AddAsync(usuario); 
-        return CreatedAtAction(nameof(GetById), new { login = usuario.Login }, usuario); 
+    {
+        if (usuario == null)
+        {
+            return BadRequest("Dados inválidos");
+        }
+        try
+        {
+            await _usuarioService.AddAsync(usuario);
+            return CreatedAtAction(nameof(GetById), new { login = usuario.Login }, usuario);
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno: {ex.Message}");
+        }
     }
 
     [HttpPut("{login}")] public async Task<IActionResult> Update(String login, Usuario usuario) 
     { 
-        if (login != usuario.Login) return BadRequest(); 
-        await _usuarioService.UpdateAsync(usuario); 
-        return NoContent(); 
+        if (usuario == null || login != usuario.Login) return BadRequest();
+        try
+        {
+            await _usuarioService.UpdateAsync(usuario);
+            return NoContent();
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno: {ex.Message}");
+        }
     }
 
     [HttpDelete("{login}")] public async Task<IActionResult> Delete(String login)
     {
-        await _usuarioService.DeleteAsync(login); 
-        return NoContent();
+        try
+        {
+            await _usuarioService.DeleteAsync(login);
+            return NoContent();
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno: {ex.Message}");
+        }
     }
 }

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2qvvQ3Cn9cQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\arthu\\Documents\\GitHub\\TechChallengeGrupo4Fase2\\ContatosGrupo4.Application\\ContatosGrupo4.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arthu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

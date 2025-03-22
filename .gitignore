@@ -1,0 +1,9 @@
+*.config
+*.v2
+*.vsidx
+*.sqlite
+.vs/TechChallengeGrupo4Fase2/v17/.suo
+.vs/TechChallengeGrupo4Fase2/v17/.wsuo
+.vs/TechChallengeGrupo4Fase2/v17/DocumentLayout.backup.json
+*.dll
+.vs/TechChallengeGrupo4Fase2/v17/DocumentLayout.json

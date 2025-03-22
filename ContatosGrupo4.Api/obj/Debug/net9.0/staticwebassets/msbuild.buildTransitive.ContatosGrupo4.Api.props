@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ContatosGrupo4.Api.props" />
+</Project>

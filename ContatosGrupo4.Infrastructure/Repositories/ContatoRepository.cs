@@ -1,6 +1,6 @@
 ﻿using ContatosGrupo4.Domain.Entities;
 using ContatosGrupo4.Domain.Interfaces;
-using ContatosGrupo4.Infrastructure.Data;
+using ContatosGrupo4.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ContatosGrupo4.Infrastructure.Repositories;

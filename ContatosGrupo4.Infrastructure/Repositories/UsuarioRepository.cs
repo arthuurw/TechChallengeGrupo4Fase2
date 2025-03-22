@@ -1,6 +1,6 @@
 ﻿using ContatosGrupo4.Domain.Entities;
 using ContatosGrupo4.Domain.Interfaces;
-using ContatosGrupo4.Infrastructure.Data;
+using ContatosGrupo4.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ContatosGrupo4.Infrastructure.Repositories;
@@ -9,13 +9,19 @@ public class UsuarioRepository(AppDbContext context) : IBaseRepository<Usuario>
 {
     private readonly AppDbContext _context = context;
 
-    public async Task<IEnumerable<Usuario>> GetAllAsync() => await _context.Usuarios.ToListAsync();
+    public async Task<IEnumerable<Usuario>> GetAllAsync()
+    {
+        return await _context.Usuarios.ToListAsync();
+    }
 
-    public async Task<Usuario> GetByIdAsync(string login) => await _context.Usuarios.FindAsync(login);
+    public async Task<Usuario> GetByIdAsync(string login)
+    {
+        return await _context.Usuarios.FindAsync(login);
+    }
 
     public async Task AddAsync(Usuario entity)
     {
-        _context.Usuarios.Add(entity);
+       await _context.Usuarios.AddAsync(entity);
         await _context.SaveChangesAsync();
     }
 
